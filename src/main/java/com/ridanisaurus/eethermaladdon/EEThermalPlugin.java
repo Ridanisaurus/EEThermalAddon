@@ -9,7 +9,7 @@ import net.minecraft.data.DataGenerator;
 
 import java.util.List;
 
-@EmendatusPluginReference(modid = EEThermalAddon.MODID, name = "config")
+@EmendatusPluginReference(modid = EEThermalAddon.MOD_ID, name = "config")
 public class EEThermalPlugin implements IEmendatusPlugin {
 	@Override
 	public void load(EmendatusDataRegistry emendatusDataRegistry) {
