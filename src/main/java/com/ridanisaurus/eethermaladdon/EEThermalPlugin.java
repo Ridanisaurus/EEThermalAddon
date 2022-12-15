@@ -1,4 +1,4 @@
-package com.ridanisaurus.eemodaddon;
+package com.ridanisaurus.eethermaladdon;
 
 import com.ridanisaurus.emendatusenigmatica.api.EmendatusDataRegistry;
 import com.ridanisaurus.emendatusenigmatica.api.IEmendatusPlugin;
@@ -9,8 +9,8 @@ import net.minecraft.data.DataGenerator;
 
 import java.util.List;
 
-@EmendatusPluginReference(modid = EEMODAddon.MODID, name = "EE MOD addon config")
-public class MODPlugin implements IEmendatusPlugin {
+@EmendatusPluginReference(modid = EEThermalAddon.MODID, name = "config")
+public class EEThermalPlugin implements IEmendatusPlugin {
 	@Override
 	public void load(EmendatusDataRegistry emendatusDataRegistry) {
 
@@ -22,8 +22,8 @@ public class MODPlugin implements IEmendatusPlugin {
 	}
 
 	@Override
-	public void registerDynamicDataGen(DataGenerator dataGenerator, EmendatusDataRegistry emendatusDataRegistry) {
-
+	public void registerDynamicDataGen(DataGenerator generator, EmendatusDataRegistry registry) {
+		generator.addProvider(true, new EEThermalDataGen.ThermalRecipes(generator, registry));
 	}
 
 	@Override
