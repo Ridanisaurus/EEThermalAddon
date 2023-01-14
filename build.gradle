@@ -21,7 +21,7 @@ def ENV = System.getenv()
 
 version = "${mod_version}-build.${ENV.GITHUB_RUN_NUMBER ?: 9999}+mc${mc_version}"
 group = 'com.ridanisaurus'
-archivesBaseName = 'EEThermalAddon'
+archivesBaseName = 'EE_Thermal_Addon'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -167,8 +167,6 @@ if (ENV.CURSE_DEPLOY) {
                 relations {
                     requiredDependency "emendatus-enigmatica"
                     requiredDependency "thermal-expansion"
-                    requiredDependency "thermal-foundation"
-                    requiredDependency "cofh-core"
 
                 }
             }
