@@ -194,8 +194,8 @@ public class EEThermalDataGen {
 								.type("thermal:press")
 								.group("emendatusenigmatica:compat_recipe")
 								.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 										.stack(EERegistrar.rawBlockItemMap.get(material.getId()).get())
+										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 								)
 								.fieldInt("energy", 400)
 								.addOutput(builder -> builder
@@ -207,8 +207,8 @@ public class EEThermalDataGen {
 								.type("thermal:press")
 								.group("emendatusenigmatica:compat_recipe")
 								.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 										.stackWithCount(EERegistrar.rawMap.get(material.getId()).get(), 9)
+										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 								)
 								.fieldInt("energy", 400)
 								.addOutput(builder -> builder
@@ -224,8 +224,8 @@ public class EEThermalDataGen {
 									.type("thermal:press")
 									.group("emendatusenigmatica:compat_recipe")
 									.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 											.stack(EERegistrar.storageBlockItemMap.get(material.getId()).get())
+											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 									)
 									.fieldInt("energy", 400)
 									.addOutput(builder -> builder
@@ -237,8 +237,8 @@ public class EEThermalDataGen {
 									.type("thermal:press")
 									.group("emendatusenigmatica:compat_recipe")
 									.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 											.stackWithCount(EERegistrar.ingotMap.get(material.getId()).get(), 9)
+											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 									)
 									.fieldInt("energy", 400)
 									.addOutput(builder -> builder
@@ -254,8 +254,8 @@ public class EEThermalDataGen {
 										.type("thermal:press")
 										.group("emendatusenigmatica:compat_recipe")
 										.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 												.stack(EERegistrar.storageBlockItemMap.get(material.getId()).get())
+												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 										)
 										.fieldInt("energy", 400)
 										.addOutput(builder -> builder
@@ -267,8 +267,8 @@ public class EEThermalDataGen {
 										.type("thermal:press")
 										.group("emendatusenigmatica:compat_recipe")
 										.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 												.stackWithCount(EERegistrar.gemMap.get(material.getId()).get(), 9)
+												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 										)
 										.fieldInt("energy", 400)
 										.addOutput(builder -> builder
@@ -282,8 +282,8 @@ public class EEThermalDataGen {
 										.type("thermal:press")
 										.group("emendatusenigmatica:compat_recipe")
 										.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 												.stack(EERegistrar.storageBlockItemMap.get(material.getId()).get())
+												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 										)
 										.fieldInt("energy", 400)
 										.addOutput(builder -> builder
@@ -295,8 +295,8 @@ public class EEThermalDataGen {
 										.type("thermal:press")
 										.group("emendatusenigmatica:compat_recipe")
 										.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_2x2_die")))
 												.stackWithCount(EERegistrar.gemMap.get(material.getId()).get(), 4)
+												.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_2x2_die")))
 										)
 										.fieldInt("energy", 400)
 										.addOutput(builder -> builder
@@ -312,8 +312,8 @@ public class EEThermalDataGen {
 								.type("thermal:press")
 								.group("emendatusenigmatica:compat_recipe")
 								.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 										.stack(EERegistrar.ingotMap.get(material.getId()).get())
+										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_unpacking_die")))
 								)
 								.fieldInt("energy", 400)
 								.addOutput(builder -> builder
@@ -325,8 +325,8 @@ public class EEThermalDataGen {
 								.type("thermal:press")
 								.group("emendatusenigmatica:compat_recipe")
 								.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 										.stackWithCount(EERegistrar.nuggetMap.get(material.getId()).get(), 9)
+										.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_packing_3x3_die")))
 								)
 								.fieldInt("energy", 400)
 								.addOutput(builder -> builder
@@ -341,8 +341,8 @@ public class EEThermalDataGen {
 									.type("thermal:press")
 									.group("emendatusenigmatica:compat_recipe")
 									.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_gear_die")))
 											.tagWithCount(EETags.MATERIAL_INGOT.apply(material.getId()), 4)
+											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_gear_die")))
 									)
 									.addOutput(builder -> builder
 											.stack(EERegistrar.gearMap.get(material.getId()).get())
@@ -355,8 +355,8 @@ public class EEThermalDataGen {
 									.type("thermal:press")
 									.group("emendatusenigmatica:compat_recipe")
 									.fieldJson("ingredients", new RecipeBuilder.JsonItemBuilder(true)
-											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_gear_die")))
 											.tagWithCount(EETags.MATERIAL_GEM.apply(material.getId()), 4)
+											.stack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal:press_gear_die")))
 									)
 									.addOutput(builder -> builder
 											.stack(EERegistrar.gearMap.get(material.getId()).get())

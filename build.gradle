@@ -112,7 +112,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "eethermaladdon",
+                "Specification-Title"     : "ee_thermal_addon",
                 "Specification-Vendor"    : "Ridanisaurus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
@@ -165,7 +165,11 @@ if (ENV.CURSE_DEPLOY) {
             mainArtifact(jar) {
                 displayName = "EEThermalAddon-${mc_version}-${mod_version}"
                 relations {
-                    optionalDependency "emendatus-enigmatica"
+                    requiredDependency "emendatus-enigmatica"
+                    requiredDependency "thermal-expansion"
+                    requiredDependency "thermal-foundation"
+                    requiredDependency "cofh-core"
+
                 }
             }
             changelog = file("changelog.md") // pull the contents of the changelog.md
