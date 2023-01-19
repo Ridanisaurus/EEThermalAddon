@@ -12,6 +12,7 @@ buildscript {
 
 plugins {
     id 'maven-publish'
+    id "com.matthewprenger.cursegradle" version "1.4.0"
 }
 
 apply plugin: 'net.minecraftforge.gradle'
@@ -34,7 +35,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
+            property 'forge.enabledGameTestNamespaces', 'ee_thermal_addon'
             mods {
                 examplemod {
                     source sourceSets.main
@@ -46,7 +47,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
+            property 'forge.enabledGameTestNamespaces', 'ee_thermal_addon'
             mods {
                 examplemod {
                     source sourceSets.main
@@ -58,7 +59,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
+            property 'forge.enabledGameTestNamespaces', 'ee_thermal_addon'
             mods {
                 examplemod {
                     source sourceSets.main
@@ -70,7 +71,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'ee_thermal_addon', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
             mods {
                 examplemod {
                     source sourceSets.main
