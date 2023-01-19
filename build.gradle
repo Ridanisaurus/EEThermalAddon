@@ -147,8 +147,14 @@ publishing {
         }
     }
     repositories {
-        maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+        if (ENV.SAPS_DEPLOY) {
+            maven {
+                url "https://maven.saps.dev/"
+                credentials {
+                    username = "rid"
+                    password = "${ENV.SAPS_DEPLOY}"
+                }
+            }
         }
     }
 }
