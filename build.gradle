@@ -87,9 +87,9 @@ repositories {
     // JEI
     maven { url "https://dvs1.progwml6.com/files/maven" }
     // EE
-    maven { url "https://maven.nanite.dev" }
+    maven { url "https://maven.saps.dev/releases/" }
     // Local Maven
-    mavenLocal()
+//    mavenLocal()
     // Curse Forge
     maven { url "https://www.cursemaven.com" }
 }
@@ -99,9 +99,6 @@ dependencies {
 
     implementation fg.deobf("com.ridanisaurus:emendatusenigmatica:${ee_version}+mc${mc_version}")
 
-    // compile against the JEI API but do not include it at runtime
-    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
-    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 
@@ -150,7 +147,7 @@ publishing {
     repositories {
         if (ENV.SAPS_DEPLOY) {
             maven {
-                url "https://maven.saps.dev/"
+                url "https://maven.saps.dev/releases/"
                 credentials {
                     username = "rid"
                     password = "${ENV.SAPS_DEPLOY}"
@@ -165,7 +162,7 @@ if (ENV.CURSE_DEPLOY) {
         apiKey = ENV.CURSE_DEPLOY
         project {
             id = project.curseforge_id // the project id of the Curse project
-            releaseType = "release" // Make it an alpha on curseforge
+            releaseType = "release"
             addGameVersion "Forge"  // Made for forge
             addGameVersion "Java 17" // Targeting java 17
             addGameVersion "${mc_version}" // Minecraft :pog:
